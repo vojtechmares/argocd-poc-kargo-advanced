@@ -15,4 +15,4 @@ spec:
   - group: '*'
     kind: '*'
   sourceRepos:
-  - https://github.com/notino/argocd-poc-kargo-vojtech-mares.git
+  - https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
