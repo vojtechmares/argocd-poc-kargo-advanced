@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+      repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
       revision: HEAD
       directories:
       - path: env/*
@@ -22,5 +22,5 @@ spec:
       project: guestbook
       source:
         path: ./
-        repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+        repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
         targetRevision: env/{{path.basename}}

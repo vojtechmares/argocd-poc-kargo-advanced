@@ -19,7 +19,7 @@ spec:
       # to the ./src directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+          repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -66,7 +66,7 @@ spec:
           apps:
           - name: guestbook-dev
             sources:
-            - repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+            - repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -92,7 +92,7 @@ spec:
       # to the ./src directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+          repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -139,7 +139,7 @@ spec:
           apps:
           - name: guestbook-staging
             sources:
-            - repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+            - repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -165,7 +165,7 @@ spec:
       # to the ./src directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+          repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -212,7 +212,7 @@ spec:
           apps:
             - name: guestbook-ab-test-a
               sources:
-              - repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+              - repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
                 desiredCommitFromStep: commit
   verification:
     analysisTemplates:
@@ -241,7 +241,7 @@ spec:
       # to the ./src directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+          repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -288,7 +288,7 @@ spec:
           apps:
           - name: guestbook-ab-test-b
             sources:
-            - repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+            - repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
               desiredCommitFromStep: commit
   verification:
     analysisTemplates:
@@ -335,7 +335,7 @@ spec:
       # to the ./src directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+          repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -382,7 +382,7 @@ spec:
           apps:
           - name: guestbook-prod-west
             sources:
-            - repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+            - repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -408,7 +408,7 @@ spec:
       # to the ./src directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+          repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -455,7 +455,7 @@ spec:
           apps:
           - name: guestbook-prod-central
             sources:
-            - repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+            - repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -481,7 +481,7 @@ spec:
       # to the ./src directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+          repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
           checkout:
           - fromFreight: true
             path: ./src
@@ -528,5 +528,5 @@ spec:
           apps:
           - name: guestbook-prod-east
             sources:
-            - repoURL: https://github.com/vojtech-mares_notino/argocd-poc-kargo-v2.git
+            - repoURL: https://github.com/vojtechmares/argocd-poc-kargo-advanced.git
               desiredCommitFromStep: commit
