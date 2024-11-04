@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
 - ../../base
 
-namespace: guestbook-ab-test-b
+namespace: argocd-poc-kargo-ab-test-b
