@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/akuity/kargo-advanced.git
+      repoURL: https://github.com/notino/argocd-poc-kargo-vojtech-mares.git
       revision: HEAD
       directories:
       - path: env/*
@@ -17,12 +17,12 @@ spec:
         kargo.akuity.io/authorized-stage: kargo-advanced:{{path.basename}}
     spec:
       destination:
-        namespace: guestbook-{{path.basename}}
+        namespace: argocd-poc-kargo-{{path.basename}}
         # Specify either a cluster destination name or server address:
         # name: REPLACEME
         # server: https://REPLACEME
       project: guestbook
       source:
         path: ./
-        repoURL: https://github.com/akuity/kargo-advanced.git
+        repoURL: https://github.com/notino/argocd-poc-kargo-vojtech-mares.git
         targetRevision: env/{{path.basename}}

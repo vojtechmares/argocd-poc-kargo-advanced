@@ -9,10 +9,10 @@ spec:
     kind: Namespace
   destinations:
   - name: '*'
-    namespace: guestbook-*
+    namespace: argocd-poc-kargo-*
     server: '*'
   namespaceResourceWhitelist:
   - group: '*'
     kind: '*'
   sourceRepos:
-  - https://github.com/akuity/kargo-advanced.git
+  - https://github.com/notino/argocd-poc-kargo-vojtech-mares.git
