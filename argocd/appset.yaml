@@ -18,9 +18,7 @@ spec:
     spec:
       destination:
         namespace: argocd-poc-kargo-{{path.basename}}
-        # Specify either a cluster destination name or server address:
-        # name: REPLACEME
-        # server: https://REPLACEME
+        server: "https://kubernetes.default.svc"
       project: guestbook
       source:
         path: ./
